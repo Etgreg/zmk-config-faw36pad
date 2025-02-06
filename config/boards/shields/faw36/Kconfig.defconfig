@@ -3,9 +3,6 @@
 
 if SHIELD_FAW36_LEFT
 
-config ZMK_KEYBOARD_NAME
-	default "faw36"
-
 endif
 
 if SHIELD_FAW36_RIGHT
@@ -17,7 +14,7 @@ endif
 
 if SHIELD_FAW36_LEFT || SHIELD_FAW36_RIGHT
 
-config ZMK_SPLIT
-	default y
+config ZMK_KEYBOARD_NAME
+	default "faw36"
 
 endif
