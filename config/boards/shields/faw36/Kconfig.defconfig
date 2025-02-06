@@ -8,7 +8,7 @@ config ZMK_KEYBOARD_NAME
 
 endif
 
-if SHIELD_FAW36_right
+if SHIELD_FAW36_RIGHT
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
