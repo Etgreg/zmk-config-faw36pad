@@ -6,6 +6,10 @@ if SHIELD_FAW36_LEFT
 config ZMK_KEYBOARD_NAME
 	default "faw36"
 
+endif
+
+if SHIELD_FAW36_right
+
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
