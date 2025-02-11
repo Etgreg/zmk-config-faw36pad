@@ -37,7 +37,7 @@
  *               `--------------------'        `--------------------'
  */
                         bindings = <
-    &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y    &kp N1      &kp N4          &kp O         &kp NUMLOCK
+    &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y    &kp N1      &kp N4          &kp O         &kp KP_NUMLOCK
     &lt NAV A   &kp S       &kp D       &kp F       &kp G       &kp H    &kp N2      &kp N5          &kp L         &kp SEMI
     &mt LSHFT Z &mt LCTRL X &mt LGUI C  &mt LALT V  &kp B       &kp N    &kp N3      &kp N6         &mt RCTRL DOT &mt RSHFT FSLH
                 &lt SYM ESC &lt SYM ESC &lt NUM TAB &kp SPACE   &kp BSPC &mo ARROWS &lt MEDIA RET &kp 1
