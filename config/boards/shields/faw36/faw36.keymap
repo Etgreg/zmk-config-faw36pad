@@ -37,7 +37,7 @@
  *               `--------------------'        `--------------------'
  */
                         bindings = <
-    &kp Q       &kp W       &kp E       &kp R       &kp T               &kp KP_N0            &kp KP_N1      &kp KP_N4         &kp KP_N7           &kp KP_NUMLOCK
+    &kp Q       &kp W       &kp E       &kp R       &kp T               &kp KP_N0            &kp KP_N1      &kp KP_N4         &kp KP_N7           &kp ESC
     &lt NAV A   &kp S       &kp D       &kp F       &kp G               &kp KP_N0            &kp KP_N2      &kp KP_N5          &kp KP_N8       &kp KP_DIVIDE
     &mt LSHFT Z &mt LCTRL X &mt LGUI C  &mt LALT V  &kp B               &kp KP_DOT           &kp KP_N3      &kp KP_N6         &kp KP_N9        &kp KP_MULTIPLY
                 &lt SYM ESC &lt SYM ESC &lt SHIFTED TAB &kp SPACE       &lt SHIFTED KP_ENTER &kp KP_PLUS    &kp KP_MINUS    &kp F1
@@ -57,9 +57,9 @@
  *               `--------------------'        `--------------------'
 */
                         bindings = <
-    &kp N0 &kp N7 &kp N8  &kp N9 &sys_reset                      &kp LPAR  &kp F2       &kp F3 &kp F4 &kp F5
-    &trans &kp N4 &kp N5  &kp N6 &kp EQUAL                       &kp RPAR  &kp F7       &kp F8 &kp F9 &kp F10
-    &trans &kp N1 &kp N2  &kp N3 &kp MINUS                       &kp COMMA &mt RALT F12 &trans &trans &trans
+    &kp N0 &kp N7 &kp N8  &kp N9 &sys_reset                      &kp LPAR  &trans       &kp LEFT &kp F4 &kp KP_NUMLOCK
+    &trans &kp N4 &kp N5  &kp N6 &kp EQUAL                       &kp RPAR  &trans       &kp DOWN &kp UP &kp BACKSPACE
+    &trans &kp N1 &kp N2  &kp N3 &kp MINUS                       &kp COMMA &trans      &kp RIGHT &trans &kp TAB
           &trans  &kp DOT &trans &trans                          &trans  &kp KP_EQUAL &kp BACKSPACE &trans 
                 >;
         };
