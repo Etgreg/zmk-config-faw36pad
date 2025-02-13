@@ -115,10 +115,10 @@
  *               `--------------------'        `--------------------'
  */
                         bindings = <
-    &trans &trans &trans &trans &trans   &sys_reset   &trans     &trans     &trans       &trans
-    &trans &trans &trans &trans &trans   &bt BT_CLR   &trans  &kp C_RW   &kp C_VOL_UP &kp C_FF
+    &trans &trans &trans &trans &trans   &sys_reset   &kp BT_PRV     &trans     &trans       &trans
+    &trans &trans &trans &trans &trans   &bt BT_CLR   &kp BT_NXT  &kp C_RW   &kp C_VOL_UP &kp C_FF
     &trans &trans &trans &trans &trans   &trans   &trans      &kp C_PREV &kp C_VOL_DN &kp C_NEXT
-           &trans &trans &trans &trans   &kp trans &kp C_MUTE &trans &to MEDIA
+           &trans &trans &trans &trans   &trans &kp C_MUTE &trans &to MEDIA
                 >;
             sensor-bindings = <&inc_dec_kp BT_NXT BT_PRV &inc_dec_kp PG_UP PG_DN>;
         };
