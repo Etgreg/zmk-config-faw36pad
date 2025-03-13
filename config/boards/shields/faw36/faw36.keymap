@@ -14,7 +14,7 @@
 #define SYM 2
 #define ARROWS 3
 #define MEDIA 4
-#define NAV 5
+#define BLUETOOTH 5
 
 &mt {
     tapping-term-ms = <300>;
@@ -61,7 +61,7 @@
     &kp N0 &kp N7 &kp N8  &kp N9 &sys_reset                      &kp LPAR  &mmv MOVE_LEFT      &kp LEFT &kp F4 &kp KP_NUMLOCK
     &trans &kp N4 &kp N5  &kp N6 &kp EQUAL                       &kp RPAR  &mmv MOVE_DOWN       &kp DOWN &kp UP &kp BACKSPACE
     &trans &kp N1 &kp N2  &kp N3 &kp MINUS                       &kp COMMA &trans      &kp RIGHT &trans &kp TAB
-          &trans  &kp DOT &trans &trans                          &trans  &kp EQUAL &kp BACKSPACE &tog MEDIA 
+          &trans  &kp DOT &trans &trans                          &trans  &kp EQUAL &kp BACKSPACE &mo BLUETOOTH 
                 >;
         };
         sym_layer {
@@ -121,12 +121,12 @@
            &trans &trans &trans &trans   &kp C_PP &kp C_MUTE &trans &tog MEDIA 
                 >;
         };
-        nav_layer {
-/* Navigation
+        bluetooth_layer {
+/* Bluetooth
  * ,----------------------------------.        ,----------------------------------.
- * |BT_CLR| BOOT | PgUp | PgDn | Pscr |        |      |      |      |      |      |
+ * |BT_CLR| BOOT | PgUp | PgDn | Pscr |        | BT_CLR |  BT_1     |      |      |      |
  * |------+------+------+------+------|        |------+------+------+------+------|
- * |      |      | Home |  End | Paus |        |      |      |      |      |      |
+ * |      |      | Home |  End | Paus |        |      | BT_2   |      |      |      |
  * |------+------+------+------+------|        |------+------+------+------+------|
  * |      |      | Ins  |  Del | Slck |        |      |      |      |      |      |
  * `-------------+------+------+------|        |------+------+------+-------------'
@@ -134,10 +134,10 @@
  *               `--------------------'        `--------------------'
  */
                         bindings = <
-    &bt BT_CLR &bootloader &kp PG_UP &kp PG_DN &kp PSCRN         &trans &trans &trans &trans &trans
-    &trans     &trans      &kp HOME  &kp END   &kp PAUSE_BREAK   &trans &trans &trans &trans &trans
-    &trans     &trans      &kp INS   &kp DEL   &kp SLCK          &trans &trans &trans &trans &trans
-              &trans    &trans    &trans    &trans            &trans &trans &trans &trans
+    &bt BT_CLR &bootloader &kp PG_UP &kp PG_DN &kp PSCRN         &bt BT_CLR &bt BT_SEL 1 &trans &trans &trans
+    &trans     &trans      &kp HOME  &kp END   &kp PAUSE_BREAK   &trans &bt BT_SEL 2 &trans &trans &trans
+    &trans     &trans      &kp INS   &kp DEL   &kp SLCK          &trans &bt BT_SEL 3 &trans &trans &trans
+              &trans    &trans    &trans    &trans                &trans &trans &trans &trans
                 >;
         };
     };
