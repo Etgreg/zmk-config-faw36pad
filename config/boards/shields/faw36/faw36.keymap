@@ -14,7 +14,7 @@
 #define SYM 2
 #define ARROWS 3
 #define MEDIA 4
-#define BLUETOOTH 5
+#define NAV 5
 
 &mt {
     tapping-term-ms = <300>;
@@ -61,7 +61,7 @@
     &kp N0 &kp N7 &kp N8  &kp N9 &sys_reset                      &kp LPAR  &mmv MOVE_LEFT      &kp LEFT &kp F4 &kp KP_NUMLOCK
     &trans &kp N4 &kp N5  &kp N6 &kp EQUAL                       &kp RPAR  &mmv MOVE_DOWN       &kp DOWN &kp UP &kp BACKSPACE
     &trans &kp N1 &kp N2  &kp N3 &kp MINUS                       &kp COMMA &trans      &kp RIGHT &trans &kp TAB
-          &trans  &kp DOT &trans &trans                          &trans  &kp EQUAL &kp BACKSPACE &mo BLUETOOTH 
+          &trans  &kp DOT &trans &trans                          &trans  &kp EQUAL &kp BACKSPACE &mo 5 
                 >;
         };
         sym_layer {
@@ -121,7 +121,7 @@
            &trans &trans &trans &trans   &kp C_PP &kp C_MUTE &trans &tog MEDIA 
                 >;
         };
-        bluetooth_layer {
+        nav_layer {
 /* Bluetooth
  * ,----------------------------------.        ,----------------------------------.
  * |BT_CLR| BOOT | PgUp | PgDn | Pscr |        | BT_CLR |  BT_1     |      |      |      |
